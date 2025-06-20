@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BingeBit API Documentation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        h1, h2 {
+            color: #007BFF;
+        }
+        pre {
+            background-color: #282828;
+            color: #f5f5f5;
+            padding: 10px;
+            border-radius: 5px;
+            overflow-x: auto;
+        }
+        code {
+            background-color: #282828;
+            color: #f5f5f5;
+            border-radius: 3px;
+        }
+        .section {
+            margin-bottom: 20px;
+        }
+    </style>
+    <link rel="stylesheet" href="./index_files/font.css">
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+</head>
+<body>
+
+    <h1>BingeBit API Key</h1>
+    <div class="section">
+        <h2>Request Key</h2>
+        <form action="/get-key" method="POST">
+            <div class="g-recaptcha" data-sitekey="6LdcRhArAAAAAKyB3O7bYtLy-acla6g125KHFqnJ"></div>
+            <br/>
+            <input type="submit" value="Submit">
+          </form>
+    </div>
+
+    <div class="section">
+        <h2>API Authentication</h2>
+        <p>To use the API, you need an API key. You can request your key by completing the captcha and hitting that button.</p>
+        <p>You can send up to 30 requests per minute. Make sure to monitor your usage to avoid hitting the rate limit.</p>
+    </div>
+</body>
+</html>

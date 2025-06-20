@@ -1,0 +1,501 @@
+[
+    {
+        "name": "film1",
+        "genres": "drama",
+        "description": "A dramatic story.",
+        "platforms": [
+            "disneyplus",
+            "primevideo"
+        ]
+    },
+    {
+        "name": "film2",
+        "genres": "comedy",
+        "description": "A hilarious adventure.",
+        "platforms": [
+            "hbomax",
+            "youtube"
+        ]
+    },
+    {
+        "name": "film3",
+        "genres": "thriller",
+        "description": "An edge-of-your-seat thriller.",
+        "platforms": [
+            "hulu"
+        ]
+    },
+    {
+        "name": "The Fall Of Diddy",
+        "genres": "Documentary",
+        "description": "Pull back the curtain on music mogul Sean Combs as allegations of long-hidden violence and abuse emerge to shock the world. ",
+        "platforms": [
+            "primevideo",
+            "hbomax"
+        ]
+    },
+    {
+        "name": "Squid Game",
+        "genres": "Korean drama",
+        "description": "Hundreds of cash-strapped players accept a strange invitation to compete in children's games. Inside, a tempting prize awaits with deadly high stakes: a survival game that has a whopping 45.6 billion-won prize at stake.",
+        "platforms": [
+            "netflix"
+        ]
+    },
+    {
+        "name": "The Life List",
+        "genres": "Comedy",
+        "description": "",
+        "platforms": [
+            "netflix"
+        ]
+    },
+    {
+        "name": "PAW Patrol: The Mighty Movie",
+        "genres": "Action",
+        "description": "A magical meteor lands in Adventure City and gives the PAW Patrol superpowers, transforming them into The MIGHTY PUPS! But they face their mightiest challenge yet when Humdinger teams up with a mad scientist to steal the superpowers for themselves.",
+        "platforms": [
+            "netflix"
+        ]
+    },
+    {
+        "name": "The Core",
+        "genres": "Action",
+        "description": "After a change in the temperature of the Earth’s core, the planet has stopped spinning. A group of astronauts must travel to the centre of the Earth and detonate a nuclear bomb, before the core superheats and destroys all life on the surface.",
+        "platforms": [
+            "netflix"
+        ]
+    },
+    {
+        "name": "Jules",
+        "genres": "Comedy",
+        "description": "It's close encounters of the lonely kind. Small town living has Milton (Ben Kingsley) stuck in a rut. Old, forgetful and isolated in his retirement, his life takes an incredible turn when a UFO crash lands in his backyard. With his beloved garden destroyed and an extraterrestrial in his living room, Milton needs to keep his new friend and his gifts a secret from the outside world.",
+        "platforms": [
+            "netflix"
+        ]
+    },
+    {
+        "name": "First Knight",
+        "genres": "Action",
+        "description": "A sweeping romantic epic about love, honor, passion and betrayal in the enchanted kingdom of Camelot.",
+        "platforms": [
+            "netflix"
+        ]
+    },
+    {
+        "name": "Con Mum",
+        "genres": "Crime",
+        "description": "",
+        "platforms": [
+            "netflix"
+        ]
+    },
+    {
+        "name": "Adolescence",
+        "genres": "Crime",
+        "description": "",
+        "platforms": [
+            "netflix"
+        ]
+    },
+    {
+        "name": "PULSE",
+        "genres": "Drama",
+        "description": "",
+        "platforms": [
+            "netflix"
+        ]
+    },
+    {
+        "name": "The Rookie",
+        "genres": "Action",
+        "description": "John Nolan, once the oldest rookie in the LAPD, has used his life experience, determination and sense of humor to keep up with rookies 20 years his junior. Nolan feels like it can't get much better, now that his life with Bailey is moving forward, and he has chosen his career path. However, he and his team must grapple with the aftermath of their recent assaults before they can move forward.",
+        "platforms": [
+            "netflix"
+        ]
+    },
+    {
+        "name": "Gone Girls: The Long Island Serial Killer",
+        "genres": "Crime",
+        "description": "",
+        "platforms": [
+            "netflix"
+        ]
+    },
+    {
+        "name": "Temptation Island",
+        "genres": "Reality",
+        "description": "In this spicy update to the hit reality series, four couples test their relationships by shacking up with eligible singles on a tropical island.",
+        "platforms": [
+            "netflix"
+        ]
+    },
+    {
+        "name": "Caught",
+        "genres": "Crime",
+        "description": "",
+        "platforms": [
+            "netflix"
+        ]
+    },
+    {
+        "name": "Nobody",
+        "genres": "Action",
+        "description": "After failing to fight for his family during a robbery, an unassuming father calls on skills from his hidden past to become a lethal vigilante blazing a wild ride to revenge.",
+        "platforms": [
+            "netflix"
+        ]
+    },
+    {
+        "name": "Kindergarten Cop",
+        "genres": "Action",
+        "description": "Arnold Schwarzenegger stars as a policeman who takes on the toughest assignment of his career when he poses as a kindergarten teacher in order to catch a criminal.",
+        "platforms": [
+            "netflix"
+        ]
+    },
+    {
+        "name": "It Ends with Us",
+        "genres": "Drama",
+        "description": "IT ENDS WITH US tells the empowering story of Lily Bloom. Grappling with a painful past, Lily embarks on a new life in Boston and opens her own flower shop. After falling in love with Ryle, Lily begins to see sides of him that remind her of her dangerous father. With the support of her friends and allies, Lily must find her own strength to break the pattern or the pattern will break her.",
+        "platforms": [
+            "netflix"
+        ]
+    },
+    {
+        "name": "Rise of the Guardians",
+        "genres": "Action",
+        "description": "When an evil spirit known as Pitch lays down the gauntlet to take over the world, the immortal Guardians must join forces for the first time to protect the hopes, beliefs and imagination of children all over the world.",
+        "platforms": [
+            "netflix"
+        ]
+    },
+    {
+        "name": "Love on the Spectrum",
+        "genres": "Documentary",
+        "description": "In this romantic documentary series, people on the autism spectrum look for love and navigate the changing world of dating and relationships.",
+        "platforms": [
+            "netflix"
+        ]
+    },
+    {
+        "name": "Devil May Cry",
+        "genres": "Action",
+        "description": "When a mysterious villain threatens to open the gates of Hell, a devilishly handsome demon hunter could be the world's best hope for salvation.",
+        "platforms": [
+            "netflix"
+        ]
+    },
+    {
+        "name": "The Residence",
+        "genres": "Comedy",
+        "description": "",
+        "platforms": [
+            "netflix"
+        ]
+    },
+    {
+        "name": "Roosters",
+        "genres": "Comedy",
+        "description": "",
+        "platforms": [
+            "netflix"
+        ]
+    },
+    {
+        "name": "Good American Family",
+        "genres": "Drama",
+        "description": "Told from multiple points of view, a Midwestern couple adopts a girl with a rare form of dwarfism.",
+        "platforms": [
+            "disneyplus"
+        ]
+    },
+    {
+        "name": "Mufasa: The Lion King",
+        "genres": "Adventure",
+        "description": "Follow the epic tale of the unlikely rise of the Pride Lands’ beloved king. An orphaned Mufasa is lost and alone until he meets Taka, heir to a royal bloodline. This launches an epic journey that tests the pair’s bonds as they evade a deadly foe.",
+        "platforms": [
+            "disneyplus"
+        ]
+    },
+    {
+        "name": "High Potential",
+        "genres": "Crime",
+        "description": "Morgan, a single mom with three kids and an exceptional mind, helps solve an unsolvable crime when she rearranges some evidence during her shift as a cleaner for the police department. When they discover she has a knack for putting things in order because of her high intellectual potential, she is brought on as a consultant to work with a by-the-book seasoned detective, Karadec. Together they form an unusual and unstoppable team.",
+        "platforms": [
+            "disneyplus"
+        ]
+    },
+    {
+        "name": "Daredevil: Born Again",
+        "genres": "Action",
+        "description": "",
+        "platforms": [
+            "disneyplus"
+        ]
+    },
+    {
+        "name": "Devil in the Family: The Fall of Ruby Franke",
+        "genres": "Crime",
+        "description": "When vlogger Ruby Franke is arrested, it quickly becomes one of the biggest stories in America.",
+        "platforms": [
+            "disneyplus"
+        ]
+    },
+    {
+        "name": "Ralph Breaks the Internet",
+        "genres": "Adventure",
+        "description": "Ralph and Vanellope are swept into the internet.",
+        "platforms": [
+            "disneyplus"
+        ]
+    },
+    {
+        "name": "Pirates of the Caribbean: The Curse of the Black Pearl",
+        "genres": "Action",
+        "description": "There are heroes and villains aplenty in this swashbuckling tale. Roguish Captain Jack is caught up in an adventure involving a legendary pirate ship, the Black Pearl, whose captain kidnaps the governor's daughter to get her doubloon necklace. Jack must rescue her and find out the ship's curse...",
+        "platforms": [
+            "disneyplus"
+        ]
+    },
+    {
+        "name": "Wreck-It Ralph",
+        "genres": "Adventure",
+        "description": "From Walt Disney Animation Studios comes a hilarious arcade-game-hopping journey. For decades, Ralph has played the bad guy in his game. In a bold move, he goes on an action-packed adventure and tries to prove that he is a true hero with a big heart.",
+        "platforms": [
+            "disneyplus"
+        ]
+    },
+    {
+        "name": "The Lion King",
+        "genres": "Adventure",
+        "description": "Disney's The Lion King, directed by Jon Favreau, journeys to the African savanna, where a future king overcomes betrayal and tragedy to assume his rightful place on Pride Rock. Through pioneering filmmaking techniques, The Lion King brings treasured characters to life in a whole new way.",
+        "platforms": [
+            "disneyplus"
+        ]
+    },
+    {
+        "name": "Dying for Sex",
+        "genres": "Drama",
+        "description": "After being diagnosed with breast cancer, Molly goes on an adventure to explore her sexual desires.",
+        "platforms": [
+            "disneyplus"
+        ]
+    },
+    {
+        "name": "Red One",
+        "genres": "Action",
+        "description": "After Santa Claus - Code Name: RED ONE - is kidnapped, the North Pole's Head of Security (Dwayne Johnson) must team up with the world's most infamous bounty hunter (Chris Evans) in a globe-trotting, action-packed mission to save Christmas.",
+        "platforms": [
+            "primevideo"
+        ]
+    },
+    {
+        "name": "Costa!! The Series",
+        "genres": "Comedy",
+        "description": "In De Tatta's: The Series we follow the hilarious Van Kampen family in their daily adventures. Erik struggles with his Tatta identity as he desperately tries to get out of debt. Laura looks for a job to support the family, Daan clumsily pursues love and Jessica finds her footing at her first job. And Richard? He argues with everyone, but remains irresistible.",
+        "platforms": [
+            "primevideo"
+        ]
+    },
+    {
+        "name": "Secret Level",
+        "genres": "Action",
+        "description": "SECRET LEVEL is a new adult animated anthology series featuring original stories set within the worlds of some of the world’s most beloved video games. From the creative minds behind LOVE, DEATH + ROBOTS, each of the 15 episodes is a celebration of games and gamers.",
+        "platforms": [
+            "primevideo"
+        ]
+    },
+    {
+        "name": "La Brea",
+        "genres": "Drama",
+        "description": "The epic adventure continues... 10,000 years from home. After a catastrophic sinkhole pulls people into a primeval past, the survivors have no choice but to explore the deepest mysteries of the prehistoric world together in the hope of escaping. The Harris family must brave the elements and animals of this world in their quest to reunite as a family once again.",
+        "platforms": [
+            "primevideo"
+        ]
+    },
+    {
+        "name": "Cross",
+        "genres": "Action",
+        "description": "Based on NY Times Bestselling author James Patterson’s #1 hero, Cross is a crime thriller that follows the investigations of brilliant forensic psychologist and DC Metro Detective Alex Cross. Together with his best friend and partner Detective John Sampson, Cross delves into the psyches of America’s most insidious killers while fighting to protect his family from the dangers of the criminal world",
+        "platforms": [
+            "primevideo"
+        ]
+    },
+    {
+        "name": "The Lord of the Rings: The Rings of Power",
+        "genres": "Action",
+        "description": "Set thousands of years before the events of J.R.R. Tolkien’s The Lord of the Rings, this epic drama follows an ensemble cast of characters, both familiar and new, as they confront the long-feared re-emergence of evil to Middle-earth.",
+        "platforms": [
+            "primevideo"
+        ]
+    },
+    {
+        "name": "Cruel Intentions",
+        "genres": "Drama",
+        "description": "Cruel Intentions follows the elite students of Manchester College, where ruthless step-siblings, Caroline and Lucien, will do anything to stay on top of the cutthroat social hierarchy. After a brutal hazing incident threatens all of Greek Life, they’ll do whatever is necessary to preserve their power and reputation, even if that means seducing the daughter of the Vice President.",
+        "platforms": [
+            "primevideo"
+        ]
+    },
+    {
+        "name": "Katie's Mom",
+        "genres": "Comedy",
+        "description": "",
+        "platforms": [
+            "primevideo"
+        ]
+    },
+    {
+        "name": "Valentine's Day",
+        "genres": "Comedy",
+        "description": "Seen through the eyes of a multi-generational all-star cast, this film threads its way through a variety of interconnecting relationships from first dates to long-time commitments, from young crushes to old flames and from singles to unrequited love.",
+        "platforms": [
+            "hbomax"
+        ]
+    },
+    {
+        "name": "The Pitt",
+        "genres": "Drama",
+        "description": "The staff of Pittsburgh’s Trauma Medical Center work around the clock to save lives in an overcrowded and underfunded emergency department.",
+        "platforms": [
+            "hbomax"
+        ]
+    },
+    {
+        "name": "Black Lotus",
+        "genres": "Action",
+        "description": "A soldier uses his military training to rescue the kidnapped daughter of his dead friend.",
+        "platforms": [
+            "hbomax"
+        ]
+    },
+    {
+        "name": "90 Day Fiancé: Before the 90 Days",
+        "genres": "Documentary",
+        "description": "90 Day Fiance: Before the 90 Days features Americans who believe they've found their soul mate online and are traveling to a different country to meet them for the very first time. During the trip, the American will get to know a practical stranger, uncovering truths and secrets that they never expected.",
+        "platforms": [
+            "hbomax"
+        ]
+    },
+    {
+        "name": "The Notebook",
+        "genres": "Drama",
+        "description": "A poor and passionate young man falls in love with a rich young woman and gives her a sense of freedom, but they soon are separated by their social differences. Based on the best-selling novel by Nicholas Sparks.",
+        "platforms": [
+            "hbomax"
+        ]
+    },
+    {
+        "name": "The Fall of Diddy",
+        "genres": "Documentary",
+        "description": "Pull back the curtain on music mogul Sean Combs as allegations of long-hidden violence and abuse emerge to shock the world.",
+        "platforms": [
+            "hbomax"
+        ]
+    },
+    {
+        "name": "Crazy, Stupid, Love.",
+        "genres": "Comedy",
+        "description": "Straight-laced Cal Weaver is living the dream—good job, nice house, great kids and marriage to his high school sweetheart. But when Cal learns that his wife, Emily, has cheated on him and wants a divorce, his “perfect” life quickly unravels.",
+        "platforms": [
+            "hbomax"
+        ]
+    },
+    {
+        "name": "The White Lotus",
+        "genres": "Comedy",
+        "description": "Taking place over one tumultuous week, this social satire follows the exploits of various guests and employees at an exclusive resort.",
+        "platforms": [
+            "hbomax"
+        ]
+    },
+    {
+        "name": "A Man Called Otto",
+        "genres": "Comedy",
+        "description": "A grumpy widower forms an unlikely friendship with his new neighbors that turns his world around.",
+        "platforms": [
+            "hbomax"
+        ]
+    },
+    {
+        "name": "Strike",
+        "genres": "Crime",
+        "description": "Based on the best-selling novels by Robert Galbraith (aka J.K. Rowling), Tom Burke (\"The Musketeers\") stars as private detective Cormoran Strike, a former war veteran now working out of a cramped London office. Together with his assistant, Robin Ellacott, Cormoran tackles cases that have, so far, baffled the police. Though struggling with the psychological and physical toll that combat have wrought on him, Cormoran is well-equipped to delve into complex conundrums thanks to his background as a Special Investigation Branch investigator.",
+        "platforms": [
+            "hbomax"
+        ]
+    },
+    {
+        "name": "Bridget Jones's Diary",
+        "genres": "Comedy",
+        "description": "Based on Helen Fielding's international best-seller, Bridget Jones's Diary is the hilarious blockbuster hit that charmed audiences worldwide! Bridget Jones (Renée Zellweger) decides it's time to take control of her life - and start keeping a diary.",
+        "platforms": [
+            "hbomax"
+        ]
+    },
+    {
+        "name": "SAS Rogue Heroes",
+        "genres": "Action",
+        "description": "Who dares wins. The adrenaline-fuelled origins of the fearless, reckless Special Forces unit, its legend forged among the mayhem of WWII. By Peaky Blinders creator Steven Knight.",
+        "platforms": [
+            "hbomax"
+        ]
+    },
+    {
+        "name": "A Cinderella Story",
+        "genres": "Comedy",
+        "description": "Meet high school student Sam who scrubs floors at a diner, copes with her wicked stepmother and stepsisters, and all the while dreams of Princeton.",
+        "platforms": [
+            "hbomax"
+        ]
+    },
+    {
+        "name": "Eyes Wide Shut",
+        "genres": "Drama",
+        "description": "Consumed by betrayal and jealousy, a wealthy Manhattan doctor becomes entangled in a a ritualistic sexual underworld when his wife admits to having lascivious sexual fantasies about another man.",
+        "platforms": [
+            "hbomax"
+        ]
+    },
+    {
+        "name": "The Eastern Gate",
+        "genres": "War",
+        "description": "",
+        "platforms": [
+            "hbomax"
+        ]
+    },
+    {
+        "name": "How to Be Single",
+        "genres": "Comedy",
+        "description": "Alice, Robin, Lucy, Meg, Tom and David all have in common is the need to learn how to be single in a world filled with ever-evolving definitions of love.",
+        "platforms": [
+            "hbomax"
+        ]
+    },
+    {
+        "name": "The Takedown: American Aryans",
+        "genres": "Documentary",
+        "description": "A thrilling sting operation takes down the Aryan Brotherhood of Texas.",
+        "platforms": [
+            "hbomax"
+        ]
+    },
+    {
+        "name": "The Lake House",
+        "genres": "Drama",
+        "description": "A lonely doctor who once occupied a lakeside house begins exchanging love letters with its newest resident. When they discover that they're actually living two years apart, they must try to unravel the mystery behind their extraordinary romance.",
+        "platforms": [
+            "hbomax"
+        ]
+    },
+    {
+        "name": "Baylen Out Loud",
+        "genres": "Reality",
+        "description": "",
+        "platforms": [
+            "hbomax"
+        ]
+    }
+]

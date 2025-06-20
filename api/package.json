@@ -1,0 +1,21 @@
+{
+  "name": "bingebit-v2",
+  "version": "1.0.0",
+  "description": "Bingebit API and crawler",
+  "license": "ISC",
+  "author": "JustTheDev As BingeBit",
+  "type": "commonjs",
+  "main": "api.js",
+  "scripts": {
+    "test": "npm install && node crawler.js && node api.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "crypto": "^1.0.1",
+    "express": "^5.1.0",
+    "express-rate-limit": "^7.5.0",
+    "node-fetch": "^3.3.2",
+    "node-fetch-commonjs": "^3.3.2",
+    "puppeteer": "^24.6.0"
+  }
+}

@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Film List - BingeBit</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+
+    <style>
+        /* General styles */
+        body {
+            font-family: "Quicksand", 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            transition: background-color 0.3s ease, color 0.3s ease;
+            background: linear-gradient(to right, #9e3769, #307c96);
+            color: white;
+        }
+
+        header {
+            background: #34495e;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            border-bottom: 5px solid #2980b9;
+            transition: background-color 0.3s ease;
+            background: linear-gradient(135deg, #ff007a, #00c1ff);
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 2.5rem;
+            letter-spacing: 1px;
+        }
+
+        .theme-toggle-container {
+            text-align: right;
+            padding-right: 20px;
+        }
+
+        button {
+            padding: 10px 20px;
+            border: none;
+            background-color: #2980b9;
+            color: white;
+            cursor: pointer;
+            font-size: 16px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #3498db;
+        }
+
+        input {
+        border: none;
+        background-color: #7dccff;
+        color: white;
+        font-size: 16px;
+        border-radius: 5px;
+        transition: background-color 0.3s;
+        }
+
+        input placeholder {
+        color: '#ffffff';
+        }
+
+        .search-container {
+            margin: 20px;
+            display: flex;
+            justify-content: center;
+            position: relative;
+        }
+
+        #search-input {
+            width: 100%;
+            max-width: 500px;
+            padding: 15px;
+            font-size: 18px;
+            border-radius: 50px;
+            border: 2px solid #2980b9;
+            outline: none;
+            transition: width 0.4s ease, border 0.4s ease;
+        }
+
+        #search-input:focus {
+            width: 80%;
+            border-color: #3498db;
+        }
+
+        .search-icon {
+            position: absolute;
+            right: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 20px;
+            cursor: pointer;
+            color: #2980b9;
+        }
+
+        .movie-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            padding: 20px;
+            justify-content: center;
+            opacity: 0;
+            animation: fadeIn 1s forwards;
+        }
+
+        .movie-card {
+            background-color: #2c3e50;
+            width: 220px;
+            border-radius: 10px;
+            padding: 15px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .movie-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .movie-card img {
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        .movie-card h2 {
+            margin-top: 10px;
+            font-size: 20px;
+            color: #ecf0f1;
+        }
+
+        .movie-card p {
+            font-size: 14px;
+            color: #bdc3c7;
+        }
+
+        .platforms {
+            margin-top: 10px;
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        .platform {
+            width: 40px;
+            height: 40px;
+            opacity: 0.8;
+            transition: opacity 0.3s ease;
+        }
+
+        .platform:hover {
+            opacity: 1;
+        }
+
+        .dark-mode {
+            background: #181818;
+            color: white;
+        }
+
+        .dark-mode button {
+            background-color: #444;
+        }
+
+        .dark-mode .movie-card {
+            background-color: #2a2a2a;
+        }
+
+        /* Search page animation */
+        .search-page {
+            display: none;
+            opacity: 0;
+            transition: opacity 1s ease-in-out;
+        }
+
+        .search-page.active {
+            display: block;
+            opacity: 1;
+        }
+
+        /* Fade-in animation */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="theme-toggle-container">
+            <button id="theme-toggle">🌙</button>
+        </div>
+        <h1>Film List - BingeBit</h1>
+    </header>
+
+    <main>
+        <div class="search-container">
+            <input type="text" id="search-input" placeholder="Search for movies...">
+            <span class="search-icon">&#128269;</span> <!-- Search icon -->
+        </div>
+
+        <div id="movie-list" class="movie-list">
+            <!-- Movies will be displayed here -->
+        </div>
+
+        <!-- Search Page -->
+        <div id="search-page" class="search-page">
+            <div class="search-result">
+                <center><h2>Search Results</h2></center>
+                <div id="search-result-list" class="movie-list">
+                    <!-- Search results come here -->
+                </div>
+            </div>
+        </div>
+
+        <div class="search-page active">
+            <div class="search-result">
+                <center><h2>Request a movie</h2>
+                <div class="movie-list" id="request-bin">
+                
+                    <div class="movie-card" style="width: '50%';">
+                        <h2>Request</h2>
+                        <p>You miss a movie here? Let us know!</p>
+                        <form action="UR API URL HERE/request" method="GET">
+                            <input type="text" id="query" class="query" name="query" placeholder="Movie Name">
+                            <button type="submit">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div></center>
+        </div>
+    </main>
+
+    <script>
+        const LOCAL_MODE = false //use localhost
+        const UNREVERSED = true //choose which api url to use
+        let BASE_URL = ``
+        if (LOCAL_MODE) {
+            BASE_URL = 'http://localhost:2025'; //testing
+        } else {
+            if (UNREVERSED) {
+                BASE_URL = 'UR API URL HERE';
+            } else {
+                BASE_URL = 'other place to put url (optional)';
+            }
+        }
+
+        // BingeBit API settings
+        const themeToggleButton = document.getElementById('theme-toggle');
+        const body = document.body;
+        const searchInput = document.getElementById('search-input');
+        const movieListElement = document.getElementById('movie-list');
+        const searchPage = document.getElementById('search-page');
+        const searchResultList = document.getElementById('search-result-list');
+
+        const API_KEY = 'PUT KEY HERE'; // Your BingeBit API Key
+
+        // Platform icons mapping
+        const platformIcons = {
+            'disneyplus': '/media/disneyplus.png',
+            'primevideo': '/media/primevideo.png',
+            'hbomax': '/media/hbomax.png',
+            'youtube': '/media/youtube.png',
+            'hulu': '/media/hulu.png',
+            'netflix': '/media/netflix.png',
+            'skyshowtime': '/media/skyshowtime.png'
+        };
+
+        // Dark/Light mode toggle
+        themeToggleButton.addEventListener('click', () => {
+            body.classList.toggle('dark-mode');
+        });
+
+        // Fetch movies from the BingeBit API
+        async function fetchMovies() {
+            const response = await fetch(`${BASE_URL}/list?amount=30`, {
+                method: 'GET',
+                headers: {
+                    'Authorization': `Bearer ${API_KEY}`
+                }
+            });
+            const data = await response.json();
+
+            data.forEach((film) => {
+                const movieCard = document.createElement('div');
+                movieCard.classList.add('movie-card');
+
+                const movieImage = document.createElement('img');
+                movieImage.src = `https://placehold.co/200x300?text=${encodeURIComponent(film.name)}`;
+                movieImage.width = "100%";
+                movieImage.height = "300px";
+                movieCard.appendChild(movieImage);
+
+                const movieTitle = document.createElement('h2');
+                movieTitle.textContent = film.name;
+                movieCard.appendChild(movieTitle);
+
+                const movieGenre = document.createElement('p');
+                movieGenre.textContent = `Genre: ${film.genres}`;
+                movieCard.appendChild(movieGenre);
+
+                const movieDescription = document.createElement('p');
+                movieDescription.textContent = film.description;
+                movieCard.appendChild(movieDescription);
+
+                const platformsDiv = document.createElement('div');
+                platformsDiv.classList.add('platforms');
+                
+                // Show platform icons
+                film.platforms.forEach((platform) => {
+                    const platformIcon = document.createElement('img');
+                    platformIcon.src = platformIcons[platform.toLowerCase()];
+                    platformIcon.classList.add('platform');
+                    platformsDiv.appendChild(platformIcon);
+                });
+
+                movieCard.appendChild(platformsDiv);
+                movieListElement.appendChild(movieCard);
+            });
+        }
+
+        // Search movies based on the query
+        async function searchMovies(query) {
+            const response = await fetch(`${BASE_URL}/find?query=${encodeURIComponent(query)}`, {
+                method: 'GET',
+                headers: {
+                    'Authorization': `Bearer ${API_KEY}`
+                }
+            });
+            const data = await response.json();
+            displaySearchResults(data);
+        }
+
+        // Display search results
+        function displaySearchResults(films) {
+            searchResultList.innerHTML = ''; // Clear any previous results
+            films.forEach((film) => {
+                const movieCard = document.createElement('div');
+                movieCard.classList.add('movie-card');
+
+                const movieImage = document.createElement('img');
+                movieImage.src = `https://placehold.co/200x300?text=${encodeURIComponent(film.name)}`;
+                movieCard.appendChild(movieImage);
+
+                const movieTitle = document.createElement('h2');
+                movieTitle.textContent = film.name;
+                movieCard.appendChild(movieTitle);
+
+                const movieGenre = document.createElement('p');
+                movieGenre.textContent = `Genre: ${film.genres}`;
+                movieCard.appendChild(movieGenre);
+
+                const movieDescription = document.createElement('p');
+                movieDescription.textContent = film.description;
+                movieCard.appendChild(movieDescription);
+
+                const platformsDiv = document.createElement('div');
+                platformsDiv.classList.add('platforms');
+
+                // Show platform icons
+                film.platforms.forEach((platform) => {
+                    const platformIcon = document.createElement('img');
+                    platformIcon.src = platformIcons[platform.toLowerCase()];
+                    platformIcon.alt = platform;
+                    platformIcon.classList.add('platform');
+                    platformsDiv.appendChild(platformIcon);
+                });
+
+                movieCard.appendChild(platformsDiv);
+                searchResultList.appendChild(movieCard);
+            });
+        }
+
+        // Perform search when user presses Enter
+        searchInput.addEventListener('keypress', function (e) {
+            if (e.key === 'Enter') {
+                const query = searchInput.value;
+                searchMovies(query);
+                animateSearchPage();
+            }
+        });
+
+        // Show search page with animation
+        function animateSearchPage() {
+            searchPage.classList.add('active');
+        }
+
+        // Initial movies fetch
+        window.onload = fetchMovies;
+    </script>
+</body>
+</html>

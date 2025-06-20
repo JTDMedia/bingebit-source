@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="title" content="Bingebit">
+<meta name="description"
+    content="Find the best place to watch your favorite movies, always up-to-date and 100% free!">
+<meta name="keywords" content="streaming, bingebit">
+<meta name="robots" content="index, follow">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="language" content="English">
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BingeBit - Endless Entertainment</title>
+  <style>
+    body {
+      background: #0d0d0d;
+      color: #f0f0f0;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      text-align: center;
+      padding: 50px 20px;
+      background: linear-gradient(135deg, #ff007a, #00c1ff);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-size: 3rem;
+      margin-bottom: 20px;
+    }
+    nav {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+    nav a {
+      text-decoration: none;
+      color: #fff;
+      margin: 0 15px;
+      font-size: 1.2rem;
+      transition: color 0.3s ease;
+    }
+    nav a:hover {
+      color: #00c1ff;
+    }
+    .hero {
+      text-align: center;
+      padding: 40px 20px;
+      background: linear-gradient(135deg, rgba(255, 0, 122, 0.2), rgba(0, 193, 255, 0.2));
+      margin-bottom: 40px;
+    }
+    .hero p {
+      font-size: 1.5rem;
+      margin-bottom: 30px;
+    }
+    .buttons {
+      text-align: center;
+      margin: 30px 0;
+    }
+    .button {
+      display: inline-block;
+      padding: 15px 30px;
+      margin: 10px;
+      font-size: 1.2rem;
+      font-weight: bold;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 30px;
+      transition: all 0.3s ease;
+    }
+    .button-primary {
+      background: #ff007a;
+      box-shadow: 0 0 20px #ff007a;
+    }
+    .button-secondary {
+      background: #00c1ff;
+      box-shadow: 0 0 20px #00c1ff;
+    }
+    .button:hover {
+      transform: scale(1.1);
+    }
+    .features {
+      margin: 50px 20px;
+      text-align: center;
+    }
+    .features h2 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+      color: #00c1ff;
+    }
+    .features .feature-list {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+    .feature-box {
+      background: #1a1a1a;
+      padding: 20px;
+      border-radius: 10px;
+      width: 280px;
+      box-shadow: 0 0 20px rgba(0, 193, 255, 0.5);
+    }
+    .feature-box h3 {
+      color: #00c1ff;
+      margin-bottom: 10px;
+    }
+    .feature-box p {
+      color: #ccc;
+      font-size: 1rem;
+    }
+    .testimonials {
+      margin: 50px 20px;
+      background: linear-gradient(135deg, rgba(255, 0, 122, 0.2), rgba(0, 193, 255, 0.2));
+      padding: 30px 20px;
+      border-radius: 10px;
+    }
+    .testimonials h2 {
+      text-align: center;
+      color: #ff007a;
+      margin-bottom: 20px;
+    }
+    .testimonial {
+      margin: 20px 0;
+      padding: 20px;
+      background: #1a1a1a;
+      border-radius: 10px;
+      box-shadow: 0 0 20px rgba(255, 0, 122, 0.5);
+    }
+    .testimonial p {
+      font-size: 1.1rem;
+      color: #ccc;
+    }
+    .testimonial span {
+      display: block;
+      text-align: right;
+      font-size: 0.9rem;
+      color: #00c1ff;
+    }
+    .call-to-action {
+      text-align: center;
+      padding: 40px 20px;
+      background: #ff007a;
+      color: #fff;
+      border-radius: 10px;
+      margin: 50px 20px;
+      box-shadow: 0 0 20px #ff007a;
+    }
+    .call-to-action h2 {
+      font-size: 2rem;
+    }
+    .call-to-action p {
+      margin: 20px 0;
+      font-size: 1.2rem;
+    }
+    footer {
+      text-align: center;
+      color: #777;
+      margin-top: 50px;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+
+<script>
+    // Maak de banner
+const banner = document.createElement("div");
+banner.innerHTML = `
+  <strong>Bingebit.online is for sale!</strong>
+  More info at <a href="https://selling.bingebit.online" style="color: white; text-decoration: underline;">selling.bingebit.online</a><br>Site will go offline after being sold or after 1 july 2025. BingeBit API will go offline at an unknown time. <br>All source code on <a href="https://github.com/jtdmedia/bingebit-source" style="color: white; text-decoration: underline;">github.com/jtdmedia/bingebit-source</a>
+`;
+banner.style.position = "fixed";
+banner.style.top = "0";
+banner.style.left = "0";
+banner.style.width = "100%";
+banner.style.backgroundColor = "#ff4d4d";
+banner.style.color = "white";
+banner.style.textAlign = "center";
+banner.style.padding = "50px 0";
+banner.style.zIndex = "10000";
+banner.style.fontFamily = "Arial, sans-serif";
+
+// Voeg ruimte toe boven de body zodat de banner niks overlapt
+document.addEventListener("DOMContentLoaded", () => {
+  document.body.style.marginTop = "50px";
+  document.body.prepend(banner);
+});
+</script>
+  <header>BingeBit - Endless Entertainment</header>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="#features">Features</a>
+    <a href="#testimonials">Reviews</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <section class="hero">
+    <p>Find the best place to watch your favorite movies, always up-to-date and 100% free!</p>
+    <div class="buttons">
+      <a href="https://dashboard.bingebit.online/" class="button button-primary">Start finding movies</a>
+    </div>
+  </section>
+  <section id="features" class="features">
+    <h2>Why Choose BingeBit?</h2>
+    <div class="feature-list">
+      <div class="feature-box">
+        <h3>Totally free</h3>
+        <p>Find unlimited movies for free</p>
+      </div>
+      <div class="feature-box">
+        <h3>Suggestions</h3>
+        <p>Our site shows you the info from different sites!</p>
+      </div>
+      <div class="feature-box">
+        <h3>Find the cheapest</h3>
+        <p>BingeBit shows you what streaming service has your movie, and how much it costs!</p>
+      </div>
+    </div>
+  </section>
+  <section id="testimonials" class="testimonials">
+    <h2>What Our Users Say</h2>
+    <div class="testimonial">
+      <p>"BingeBit has revolutionized my weekends. I can't imagine life without it!"</p>
+      <span>- Alex, Utrecht</span>
+    </div>
+    <div class="testimonial">
+      <p>"I love this site. Highly recommended!"</p>
+      <span>- Sophie, Amsterdam</span>
+    </div>
+    <div class="testimonial">
+      <p>"Finding a movie to watch with my family has never been easier!"</p>
+      <span>- Daniel, Rotterdam</span>
+    </div>
+  </section>
+  <section class="call-to-action">
+    <h2>Ready to Stream?</h2>
+    <p>Sign up today and unlock endless entertainment.</p>
+    <a href="https://dashboard.bingebit.online/" class="button button-secondary">Start finding movies</a>
+  </section>
+  <footer id="contact">
+    &copy; 2025 BingeBit. Need help? Contact us at <a href="mailto:support@bingebit.online">support@bingebit.online</a>
+  </footer>
+</body>
+</html>
